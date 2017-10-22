@@ -4,10 +4,9 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
-//Class to load classes it finds the file when the progrm starts to fail for calling a missing class
+//Class to load classes
 class Manage {
     public static function autoload($class) {
-        //you can put any file name or directory here
         include $class . '.php';
     }
 }
@@ -42,3 +41,4 @@ class main {
     }
 
 }
+?>
